@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MayTinh</title>
+</head>
+<body>
+<h1>Ứng dụng máy tính</h1>
+<h3>Mời bạn nhập số thứ 1</h3>
+<input type="text" id="value1" name="value1" value="">
+<h3>Mời bạn nhập số thứ 2</h3>
+<input type="text" id="value2" name="value2" value="">
+</br></br>
+<input type="button" id="btnTotal" onclick="add()" value="Add( + )" ;>
+<input type="button" id="btnSubstract" onclick="sub()" value="Subtract( - )" ;>
+<input type="button" id="btnMultiply"  onclick="multiply()" value="Multiply( x )" ;>
+<input type="button" id="btnDivide" onclick="divide()" value="Divide( / )" ;>
+<script>
+    var x;
+    var y;
+    var result;
+
+    window.onkeyup = function() {
+        x = parseFloat( document.getElementById("value1").value);
+        y =parseFloat( document.getElementById("value2").value);
+    }
+
+    function  add() {
+        result = x + y;
+        alert('Kết quả là' + ' ' + result);
+    }
+
+    function sub() {
+        result = x - y;
+        alert('Kết quả là' + ' ' +result);
+    }
+
+    function multiply() {
+        result = x*y;
+        alert('Kết quả là' + ' '+result);
+    }
+
+    function divide() {
+        result = x/y;
+        alert('Kết quả là'+' '+result);
+    }
+</script>
+
+</body>
+</html>
